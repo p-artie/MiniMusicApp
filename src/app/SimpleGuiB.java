@@ -17,16 +17,12 @@ public class SimpleGuiB implements ActionListener{
 	public void go() {
 		JFrame frame = new JFrame();
 		button = new JButton("Click me");
-		
+		//This tells the button that I care about listening to the actions performed on him.
 		button.addActionListener(this);
 		
-		
 		frame.getContentPane().add(button);
-		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
 		frame.setSize(300, 300);
-		
 		frame.setVisible(true);
 	}
 	
