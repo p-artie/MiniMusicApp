@@ -1,6 +1,7 @@
 package app;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,8 +14,10 @@ public class Button1 {
 	
 	public void go() {
 		JFrame frame = new JFrame();
-		JButton button = new JButton("Click like you mean it");
-		frame.getContentPane().add(BorderLayout.EAST, button);
+		JButton button = new JButton("Click this");
+		Font bigfont = new Font("serif", Font.BOLD, 28);
+		button.setFont(bigfont);
+		frame.getContentPane().add(BorderLayout.NORTH, button);
 		frame.setSize(200, 200);
 		frame.setVisible(true);
 	}
