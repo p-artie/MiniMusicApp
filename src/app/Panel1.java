@@ -3,6 +3,7 @@ package app;
 import java.awt.BorderLayout;
 import java.awt.Color;
 
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,6 +19,8 @@ public class Panel1 {
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.darkGray);
+		
+		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		JButton button = new JButton("shock me");
 		JButton button2 = new JButton("Bliss");
 		JButton button3 = new JButton("huh?");
