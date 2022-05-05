@@ -46,7 +46,7 @@ public class Beatbox {
 		JPanel background = new JPanel(layout);
 		background.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		
-		checkboxList = new ArrayList<JCheckbox>();
+		checkboxList = new ArrayList<JCheckBox>();
 		Box buttonBox = new Box(BoxLayout.Y_AXIS);
 		
 		JButton start = new JButton("Start");
@@ -65,7 +65,7 @@ public class Beatbox {
 		stop.addActionListener(new MyDownTempoListener());
 		buttonBox.add(downTempo);
 		
-		Box nameBox = new Box(BoxLayout.X_AXIS);
+		Box nameBox = new Box(BoxLayout.Y_AXIS);
 		for (int i = 0; i < 16; i++) {
 			nameBox.add(new Label(instrumentNames[i]));
 		}
