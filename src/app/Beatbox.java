@@ -90,7 +90,7 @@ public class Beatbox {
 		
 		setUpMidi();
 		
-		theFrame.setBounds(50,50,300,300);
+		theFrame.setBounds(48,48,300,300);
 		theFrame.pack();
 		theFrame.setVisible(true);
 		
